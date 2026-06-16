@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisa Holmberg — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main class="start">
+    <header class="start__header">
+      <div class="start__name-group">
+        <p class="heading-xl start__reveal">Lisa Holmberg</p>
+        <p class="heading-l start__reveal">Senior Product Designer</p>
+      </div>
+      <button class="start__about start__reveal" type="button" data-modal-open="about"><span class="start__about-text">About</span></button>
+    </header>
+
+    <div class="start__work">
+      <p class="heading-l start__label start__reveal">Selected work</p>
+
+      <section class="cards start__reveal" aria-label="Selected work">
+      <div class="cards__track">
+        <button class="card card--bl-tile" type="button" data-modal-open="bl" aria-label="Open Blomsterlandet case">
+          <img src="assets/BL-tile.png" alt="" class="card__image">
+          <span class="card__label" aria-hidden="true">Blomsterlandet</span>
+        </button>
+        <button class="card card--w-font" type="button" data-modal-open="willab" aria-label="Open Willab Garden case">
+          <img src="assets/W-Font.png" alt="" class="card__image">
+          <span class="card__label" aria-hidden="true">Willab garden</span>
+        </button>
+        <button class="card card--fk-screens" type="button" data-modal-open="fk" aria-label="Open Försäkringskassan case">
+          <img src="assets/FK-screens.png" alt="" class="card__image">
+          <span class="card__label" aria-hidden="true">Försäkringskassan</span>
+        </button>
+        <button class="card card--fk-top" type="button" data-modal-open="fk" aria-label="Open Försäkringskassan case">
+          <img src="assets/FK-top.jpg" alt="" class="card__image">
+          <span class="card__label" aria-hidden="true">Försäkringskassan</span>
+        </button>
+        <button class="card card--w-ipad" type="button" data-modal-open="willab" aria-label="Open Willab Garden case">
+          <img src="assets/W-Ipad.png" alt="" class="card__image">
+          <span class="card__label" aria-hidden="true">Willab garden</span>
+        </button>
+        <button class="card card--bl-screens" type="button" data-modal-open="bl" aria-label="Open Blomsterlandet case">
+          <img src="assets/BL-screens.png" alt="" class="card__image">
+          <span class="card__label" aria-hidden="true">Blomsterlandet</span>
+        </button>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <div class="modal" id="modal-bl" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel modal__panel--bl" role="dialog" aria-modal="true" aria-labelledby="modal-bl-title">
+      <header class="modal__header">
+        <p class="modal__label">Case</p>
+        <button class="modal__close" type="button" data-modal-close aria-label="Close">
+          <span class="modal__close-icon" aria-hidden="true"></span>
+        </button>
+      </header>
+      <div class="modal__intro">
+        <div class="modal__title-row">
+          <h2 class="case-title" id="modal-bl-title">Blomsterlandet</h2>
+        </div>
+        <p class="case-intro">Dirt under your nails and a smile on your face — that was the feeling we were after. Paired with the kind of expertise you actually trust. The design followed the same instinct: rich, warm and a little more generous than expected.</p>
+      </div>
+      <div class="modal__content">
+        <figure class="modal__figure modal__figure--sage">
+          <img src="assets/BL-phone.png" alt="Blomsterlandet mobile app hero">
+        </figure>
+        <figure class="modal__figure modal__figure--sage">
+          <img src="assets/BL-screens.png" alt="Blomsterlandet app screens">
+        </figure>
+        <figure class="modal__figure">
+          <img src="assets/BL-mark.png" alt="Blomsterlandet campaign">
+        </figure>
+        <figure class="modal__figure modal__figure--sage">
+          <img src="assets/BL-tile.png" alt="Blomsterlandet app tile views">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-willab" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel modal__panel--willab" role="dialog" aria-modal="true" aria-labelledby="modal-willab-title">
+      <header class="modal__header">
+        <p class="modal__label">Case</p>
+        <button class="modal__close" type="button" data-modal-close aria-label="Close">
+          <span class="modal__close-icon" aria-hidden="true"></span>
+        </button>
+      </header>
+      <div class="modal__intro">
+        <div class="modal__title-row">
+          <h2 class="case-title" id="modal-willab-title">Willab garden</h2>
+        </div>
+        <p class="case-intro">Buying a greenhouse is a big decision. Willab Garden has always made it feel less so. The new visual identity brought that same warmth online — a colour palette rooted in nature, a tone that guides rather than pushes, and a shopping experience that feels like talking to someone who actually knows their stuff.</p>
+      </div>
+      <div class="modal__content">
+        <figure class="modal__figure">
+          <img src="assets/W-Ipad.png" alt="Willab Garden iPad website">
+        </figure>
+        <figure class="modal__figure">
+          <img src="assets/W-Font.png" alt="Willab Garden typography">
+        </figure>
+        <figure class="modal__figure modal__figure--carousel">
+          <div class="modal__carousel">
+            <img class="modal__carousel-bg" src="assets/W 3.png" alt="" aria-hidden="true">
+            <div class="modal__carousel-viewport" data-modal-carousel aria-label="Willab Garden product cards">
+              <div class="modal__carousel-track">
+                <img class="modal__carousel-card" src="assets/w3-1.png" alt="Willab Garden help card">
+                <img class="modal__carousel-card" src="assets/W3-2.png" alt="Willab Garden tulip mark">
+                <img class="modal__carousel-card" src="assets/w3-3.png" alt="Willab Garden greenhouse offer">
+                <img class="modal__carousel-card" src="assets/w3-4.png" alt="Willab Garden sun lounger">
+                <img class="modal__carousel-card" src="assets/w3-5.png" alt="Willab Garden quantity control">
+              </div>
+            </div>
+          </div>
+        </figure>
+        <figure class="modal__figure modal__figure--sage">
+          <img src="assets/W-article.png" alt="Willab Garden article layout">
+        </figure>
+        <figure class="modal__figure">
+          <img src="assets/W-colors.png" alt="Willab Garden color palette">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-fk" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel modal__panel--fk" role="dialog" aria-modal="true" aria-labelledby="modal-fk-title">
+      <header class="modal__header">
+        <p class="modal__label">Case</p>
+        <button class="modal__close" type="button" data-modal-close aria-label="Close">
+          <span class="modal__close-icon" aria-hidden="true"></span>
+        </button>
+      </header>
+      <div class="modal__intro">
+        <div class="modal__title-row">
+          <h2 class="case-title" id="modal-fk-title">Försäkringskassan</h2>
+        </div>
+        <p class="case-intro">Your kid is sick, your day is already derailed. The last thing you need is a complicated form. The goal was simple: get out of the way — fast to navigate, easy to understand, and done before the second cup of coffee goes cold.</p>
+      </div>
+      <div class="modal__content">
+        <figure class="modal__figure modal__figure--sage">
+          <img src="assets/FK-screens.png" alt="Försäkringskassan app screens">
+        </figure>
+        <figure class="modal__figure modal__figure--sage">
+          <img src="assets/FK-buttons.png" alt="Försäkringskassan profile buttons">
+        </figure>
+        <figure class="modal__figure">
+          <img src="assets/FK-top.jpg" alt="Försäkringskassan phone mockup">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-about" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__panel modal__panel--about" role="dialog" aria-modal="true" aria-labelledby="modal-about-title">
+      <header class="modal__header modal__header--about">
+        <p class="heading-xl" id="modal-about-title">About me</p>
+        <button class="modal__close modal__close--dark" type="button" data-modal-close aria-label="Close">
+          <span class="modal__close-icon modal__close-icon--dark" aria-hidden="true"></span>
+        </button>
+      </header>
+      <blockquote class="quote modal__quote">
+        I don't conjure ideas from thin air — I solve problems. Making something difficult simpler and more beautiful is what drives me. Finding the right tone, the right feel, the interface that just works — that's my thing.
+      </blockquote>
+      <div class="modal__about-body">
+        <figure class="modal__about-image">
+          <img src="assets/Me.png" alt="Lisa Holmberg">
+        </figure>
+        <div class="modal__about-text">
+          <p class="body-text">I'm a Senior Product Designer at Valtech, based in Gothenburg, with close to 30 years in the digital industry. Enough experience to know what works, still curious enough to question it.</p>
+          <p class="body-text">My work spans branding, design systems, prototyping and user research — sometimes all in the same project. Lately I've also been exploring what AI tools bring to the design process.</p>
+          <p class="body-text">I believe the best ideas come from real collaboration — where one idea sparks the next and we build something together neither of us would have made alone. I value spaces where people feel free to speak their minds.</p>
+          <div class="modal__about-section">
+            <p class="heading-xl">Clients</p>
+            <p class="body-text">Volvo, Astra zeneka, Blomsterlandet, Willab garden, Telia, Försäkringskassan, Kantar, Recorded future, Royal Canin, Kinnarps, SLU, Svenska Mässan...</p>
+          </div>
+          <div class="modal__about-section">
+            <p class="heading-xl">Experience</p>
+            <p class="body-text">Agency background — Resco, Stendahls, Inuse, Valtech.</p>
+          </div>
+          <div class="modal__about-section">
+            <p class="heading-xl">Contact</p>
+            <p class="body-text"><a class="about-contact__link" href="mailto:lisa.ateljebram@gmail.com">lisa.ateljebram@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
