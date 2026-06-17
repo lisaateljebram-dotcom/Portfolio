@@ -390,7 +390,8 @@ img {
     gap: 8px;
     width: 100%;
     height: auto;
-    padding: 0 0 var(--spacing-large) var(--spacing-large);
+    padding-inline: var(--spacing-large);
+    padding-bottom: var(--spacing-large);
   }
 
   .card {
@@ -858,7 +859,8 @@ body.modal-open {
     }
 
     .cards__track {
-      padding: 0 0 var(--spacing-medium) var(--spacing-side);
+      padding-inline: var(--spacing-side);
+      padding-bottom: var(--spacing-medium);
     }
   }
 
@@ -895,5 +897,11 @@ body.modal-open {
 @media (min-width: 1410px) {
   .cards__track {
     padding-left: var(--spacing-xsmall);
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    .cards__track {
+      padding-inline: var(--spacing-xsmall);
+    }
   }
 }
