@@ -151,7 +151,9 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 var(--spacing-large);
+  width: min(var(--width-content), calc(100% - 2 * var(--spacing-large)));
+  max-width: var(--width-content);
+  margin-inline: auto;
 }
 
 .start__name-group {
@@ -186,7 +188,9 @@ img {
 
 .start__label {
   margin: 0;
-  padding: 0 var(--spacing-large);
+  width: min(var(--width-content), calc(100% - 2 * var(--spacing-large)));
+  max-width: var(--width-content);
+  margin-inline: auto;
   line-height: 20px;
 }
 
@@ -838,7 +842,7 @@ body.modal-open {
 
   .start__header,
   .start__label {
-    padding: 0 var(--spacing-side);
+    width: min(var(--width-content), calc(100% - 2 * var(--spacing-side)));
   }
 
   .modal__panel {
