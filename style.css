@@ -188,9 +188,7 @@ img {
 
 .start__label {
   margin: 0;
-  width: min(var(--width-content), calc(100% - 2 * var(--spacing-large)));
-  max-width: var(--width-content);
-  margin-inline: auto;
+  padding: 0 var(--spacing-large);
   line-height: 20px;
 }
 
@@ -280,7 +278,7 @@ img {
 .cards__track {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
+  gap: 8px;
   height: 100%;
   width: max-content;
   padding: 0 var(--spacing-large);
@@ -387,7 +385,7 @@ img {
   .cards__track {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 8px;
     width: 100%;
     height: auto;
     padding-bottom: var(--spacing-large);
@@ -836,13 +834,16 @@ body.modal-open {
   }
 
   .cards__track {
-    gap: 16px;
+    gap: 8px;
     padding: 0 var(--spacing-side);
   }
 
-  .start__header,
-  .start__label {
+  .start__header {
     width: min(var(--width-content), calc(100% - 2 * var(--spacing-side)));
+  }
+
+  .start__label {
+    padding: 0 var(--spacing-side);
   }
 
   .modal__panel {
